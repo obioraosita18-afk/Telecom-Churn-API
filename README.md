@@ -1,5 +1,7 @@
 ## Live API
-Live APIhttps://telecom-churn-api-hxmm.onrender.comInteractive API Docs (Swagger UI)https://telecom-churn-api-hxmm.onrender.com/docsFull Notebook ViewerView on nbviewer
+Live API   https://telecom-churn-api-hxmm.onrender.com 
+Interactive API Docs (Swagger UI)  https://telecom-churn-api-hxmm.onrender.com/docs 
+FullNotebook ViewerView on  nbviewer
 
 The API is hosted on a free instance — it may take 30–50 seconds to wake up on first request.
 

@@ -1,3 +1,51 @@
+## Live API
+Live APIhttps://telecom-churn-api-hxmm.onrender.comInteractive API Docs (Swagger UI)https://telecom-churn-api-hxmm.onrender.com/docsFull Notebook ViewerView on nbviewer
+
+The API is hosted on a free instance — it may take 30–50 seconds to wake up on first request.
+
+## Project Overview
+An end-to-end machine learning project that predicts whether a telecom customer will Churn  or Stay  based on their service usage, contract type, and demographic information.
+
+##  Test the API
+Option 1 — Swagger UI (No coding needed)
+Visit → https://telecom-churn-api-hxmm.onrender.com/docs
+Click POST /predict → Try it out → Execute
+See the prediction result instantly! 
+
+##  Sample Request (curl)
+bashcurl -X POST "https://telecom-churn-api-hxmm.onrender.com/predict" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "gender": "Female",
+    "SeniorCitizen": "No",
+    "Partner": "Yes",
+    "Dependents": "No",
+    "tenure": 12,
+    "PhoneService": "Yes",
+    "MultipleLines": "No",
+    "InternetService": "Fiber optic",
+    "OnlineSecurity": "No",
+    "OnlineBackup": "Yes",
+    "DeviceProtection": "No",
+    "TechSupport": "No",
+    "StreamingTV": "No",
+    "StreamingMovies": "No",
+    "Contract": "Month-to-month",
+    "PaperlessBilling": "Yes",
+    "PaymentMethod": "Electronic check",
+    "MonthlyCharges": 70.35,
+    "TotalCharges": 844.20
+  }'
+Sample Response
+json{
+  "churn_prediction": true,
+  "churn_label": "Churn",
+  "churn_probability": 0.7123,
+  "retention_probability": 0.2877,
+  "risk_level": "High"
+}
+
+
 #  Telecom Customer Churn Analysis & Prediction
 
 A machine learning project that analyzes customer churn patterns in a telecommunications dataset and builds a predictive model to identify customers at risk of leaving.
